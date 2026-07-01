@@ -1,0 +1,19 @@
+{
+  "name": "telegram-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Secure multi-user Telegram bot integrated with Google Calendar (Vercel + Supabase)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "gen-secrets": "node scripts/gen-secrets.js",
+    "set-webhook": "node scripts/set-webhook.js",
+    "set-commands": "node scripts/set-commands.js",
+    "delete-webhook": "node scripts/delete-webhook.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4"
+  }
+}
